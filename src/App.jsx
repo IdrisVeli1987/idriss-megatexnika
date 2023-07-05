@@ -1,9 +1,11 @@
+import PageContainer from "./Components/PageContainer";
+
 function App() {
   return (
-    <>
-    <h1>MegaTexnika</h1>
-    </>
-  )
+    <PageContainer>
+      <h1>MegaTexnika</h1>
+    </PageContainer>
+  );
 }
 
-export default App
+export default App;
