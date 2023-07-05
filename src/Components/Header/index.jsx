@@ -1,8 +1,8 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
-
+import MegaTexnikaLogo from "../../assets/Logo/logo.png";
 const Header = () => {
   return (
     <>
@@ -20,6 +20,32 @@ const Header = () => {
           </Stack>
         </Container>
       </Box>
+      <Container sx={{py: 4}}>
+        <Stack
+          flexDirection="row"
+          alignItems="center"
+          justifyContent="space-between"
+        >
+          <img
+            src={MegaTexnikaLogo}
+            alt="MegaTexnikaLogo"
+            style={{ objectFit: "contain" }}
+          />
+          <Stack flexDirection="row" gap={2}>
+            <Typography component="a" href="#">Əsas səhifə</Typography>
+            <Typography component="a" href="#">Haqqımızda</Typography>
+            <Typography component="a" href="#">Texnikalar</Typography>
+            <Typography component="a" href="#">İcarə şərtləri</Typography>
+            <Typography component="a" href="#">Blog</Typography>
+            <Typography component="a" href="#">Əlaqə</Typography>
+          </Stack>
+          <Stack flexDirection="row" gap={2}>
+            <Typography>Az</Typography>
+            <Typography>En</Typography>
+            <Typography>Ru</Typography>
+          </Stack>
+        </Stack>
+      </Container>
     </>
   );
 };
